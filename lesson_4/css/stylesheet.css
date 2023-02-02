@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Neuve Grotesque';
+    src: url('NeuveGrotesque-Regular.woff2') format('woff2'),
+        url('NeuveGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neuve Grotesque';
+    src: url('NeuveGrotesque-Bold.woff2') format('woff2'),
+        url('NeuveGrotesque-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

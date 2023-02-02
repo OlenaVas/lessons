@@ -1,0 +1,77 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+body {
+   font-family: 'PT Serif', serif;
+   font-size: 18px;
+   font-weight: 400;
+   color: rgb(11, 59, 24, 0.7);
+}
+
+.text {
+   font-family: "Montserrat";
+   font-size: 18px;
+   font-style: oblique;
+   font-weight: 300;
+   text-align: justify;
+   line-height: 1.2;
+   text-indent: 20px;
+}
+
+.introduction {
+   font-family: "Roboto";
+   font-size: 20px;
+   font-style: italic;
+   font-weight: 400;
+   color: yellowgreen;
+   text-indent: 20px;
+}
+.title {
+   font-family: "Montserrat";
+   font-size: 36px;
+   font-style: italic;
+   font-weight: 700;
+   text-align: center;
+   text-decoration: underline;
+   text-shadow: 2px 2px 5px #000;
+   text-transform: uppercase;
+   white-space: normal;
+   word-spacing: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap');
+span {
+   font-family: 'Noto Sans', sans-serif;
+   letter-spacing: 4px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&display=swap');
+ul {
+   font-family: 'Unbounded', cursive;
+   }
+   @font-face {
+      font-family: 'Neuve Grotesque';
+      src: url('../fonts/NeuveGrotesque-Regular.woff2') format('woff2'),
+         url('../fonts/NeuveGrotesque-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: 'Neuve Grotesque';
+      src: url('../fonts/NeuveGrotesque-Bold.woff2') format('woff2'),
+         url('../fonts/NeuveGrotesque-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+}
+
+.lesson {
+   font-family: 'Neuve Grotesque';
+}
+.task {
+   font-family: "Montserrat";
+}
+.list {
+   text-align: justify;
+}
