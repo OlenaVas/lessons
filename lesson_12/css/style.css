@@ -1,0 +1,233 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.5;
+   color: #d4dde4;
+   background-color: #444a9e;
+}
+
+.css-transform__container {
+   max-width: 1440px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0 auto;
+
+}
+
+.css-transform__title {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 1.8;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.css-transform__row {
+   max-width: 1400px;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+h1 {
+   display: block;
+   text-align: center;
+}
+
+.block {
+   text-align: center;
+   width: 100px;
+   height: 100px;
+   margin-right: 20px;
+   display: inline-block;
+}
+
+.translate-2d {
+   background-color: #22265a;
+   display: inline-block;
+}
+
+.translate-2d:hover {
+   transform: translate(0px, 20px);
+   transition: 0.5s;
+}
+
+.scale-2d {
+   background-color: #0d0f35;
+   transform: scale(1);
+}
+
+.scale-2d:hover {
+   transform: scale(1.5);
+   transition: 0.8s;
+}
+
+.scale-turn-2d {
+   background-color: #0d0f35;
+   transform: scale(1);
+}
+
+.scale-turn-2d:hover {
+   transform: scale(-1, 1);
+   transition: 0.8s;
+}
+
+.rotate-2d {
+   background-color: #6166d1;
+   transform: rotate(0deg);
+}
+
+.rotate-2d:hover {
+   transform: rotate(360deg);
+   transition: 1s;
+}
+
+.skew-2d {
+   background-color: #7379f7;
+   transform: skew(0deg, 0deg);
+}
+
+.skew-2d:hover {
+   transform: skew(45deg, 0deg);
+   transition: 1s;
+}
+
+.matrix-2d {
+   background-color: #343779;
+   transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.matrix-2d:hover {
+   transform: matrix(1, 0, 0, 2, 40, 0);
+   transition: 1s;
+}
+
+.multi-2d {
+   background-color: #5054a3;
+}
+
+.multi-2d:hover {
+   transform: translate(0px, 20px) scale(0.8);
+   transition: 1s;
+}
+
+.origin-2d {
+   background-color: #2a2c61;
+   transform-origin: 0 0;
+   transform: rotate(0deg);
+}
+
+.origin-2d:hover {
+   transform: rotate(90deg);
+   transition: 1s;
+}
+
+.css-transform__row {
+   position: relative;
+}
+
+.zaxis {
+   perspective-origin: center;
+   perspective: 1500px;
+   transform-style: preserve-3d;
+}
+
+.perspective {
+   background-color: #464885;
+   transform: rotateX(0deg);
+   transition: 1s;
+}
+
+.perspective:hover {
+   transform: rotateX(90deg);
+   transition: 1s;
+}
+
+.translate-3d {
+   background-color: #212453;
+   transform: translate3D(0px, 20px, 0px);
+}
+
+.translate-3d:hover {
+   transform: translate3D(20px, 20px, 300px);
+   transition: 0.5s;
+}
+
+.scale-3d {
+   background-color: #101236;
+   transform: scale3D(1, 1, 1);
+}
+
+.scale-3d:hover {
+   transform: scale3D(2, 2, 5);
+   transition: 0.8s;
+}
+
+.rotate-3d {
+   background-color: #6166d1;
+   transform: rotate3d(1, 1, 1, 0deg);
+}
+
+.rotate-3d:hover {
+   transform: rotate3d(1, 1, 1, 360deg);
+   transition: 1s;
+}
+
+.multi-3d {
+   background-color: #34386b;
+}
+
+.multi-3d:hover {
+   transform: translate3d(0px, 20px, 30px) rotate3d(1, 1, 1, 360deg);
+   transition: 1s;
+}
+
+.visibility {
+position: relative;
+}
+
+.backface-visibility-front {
+   position: absolute;
+   top: 0;
+   left: 645px;
+   z-index: 2;
+   background-color: #1b1e5e;
+   transform: rotateY(0deg);
+   backface-visibility: hidden;
+}
+
+.backface-visibility-back {
+   position: absolute;
+   top: 0;
+   left: 645px;
+   background-color: #9195d8;
+   transform: rotateY(-180deg);
+}
+
+.backface-visibility-front:hover {
+   transform: rotateY(-180deg);
+   transition: 2s;
+}
+
+.car__background {
+   min-height: 580px;
+   background-image: url("../img/vecteezy_cartoon-scene-of-building-construction-site_7474242.jpg");
+   background-size: 50%;
+}
+
+.forklift {
+   max-width: 30%;
+   position: absolute;
+   top: 680px;
+   right: 0;
+}
+
+.forklift:hover {
+   transform: translate(-1300px, 0px);
+   transition: 5s;
+}
