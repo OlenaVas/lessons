@@ -1,0 +1,162 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.5;
+   color: #d4dde4;
+   background-color: #9e4497;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+.css-transition__container {
+   max-width: 1440px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0 auto;
+
+}
+
+.css-transition__title {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 1.8;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.css-transition__row {
+   max-width: 1400px;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 50px;
+   display: flex;
+   justify-content: center;
+}
+
+h2 {
+   display: block;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.block {
+   text-align: center;
+   width: 150px;
+   height: 150px;
+   margin-right: 20px;
+   border-radius: 5px;
+   box-shadow: 10px 10px 10px #000000;
+}
+
+.transition-duration {
+   background-color: #5a2253;
+   opacity: 1;
+   visibility: visible;
+}
+
+.transition-duration:hover {
+   background-color: #9e4497;
+   opacity: 0;
+   visibility: hidden;
+   transition-duration: 1.5s;
+   transition-property: opacity visibility;
+}
+
+.transition-delay {
+   background-color: #360738;
+   transform: scale(1);
+}
+
+.transition-delay:hover {
+   background-color: #5a2253;
+   display: inline-block;
+   transform: scale(1.5);
+   transition-duration: 1s;
+   transition-delay: 1s;
+}
+
+.transition-timing-function {
+   background-color: #3b0239;
+   transform: scale(1);
+}
+
+.transition-timing-function:hover {
+   background-color: #9e4497;
+   transition-duration: 2s;
+   transition-timing-function: ease-out;
+}
+
+.transition-all {
+   background-color: #c567b9;
+}
+
+.transition-all:hover {
+   background-color: #803475;
+   transition: all 1s ease-out 1s;
+}
+
+.animation {
+   background-color: #803475;
+   box-shadow: none;
+   border-radius: 50%;
+   animation-name: rotate;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+}
+
+.car__background {
+   min-height: 580px;
+   background-image: url("../img/vecteezy_cartoon-scene-of-building-construction-site_7474242.jpg");
+   background-size: 50%;
+}
+
+.forklift {
+   max-width: 30%;
+   position: absolute;
+   top: 830px;
+   right: 0;
+
+   animation-name: translate;
+   animation-duration: 3s;
+   animation-timing-function: ease-in;
+   animation-iteration-count: infinite;
+}
+
+@keyframes translate {
+   0%{
+      transform: translate(0px, 0px);
+      opacity: 1;
+      visibility: visible;
+   }
+   70%{
+      opacity: 1;
+      visibility: visible; 
+   }
+   100%{
+      transform: translate(-1350px, 0px);
+      opacity: 0;
+      visibility: hidden;
+   }
+}
+
+.forklift:hover {
+   animation-play-state: paused;
+}
