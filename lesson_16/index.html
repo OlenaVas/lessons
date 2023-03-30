@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Forms</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <main class="page">
+         <div class="page__container">
+            <div class="lesson-forms">
+               <form class="form" method="post" enctype="multipart/form-data" action="#">
+                  <div class="title">
+                     <h1>Order form</h1>
+                  </div>
+                  <div class="form__line">
+                     <label class="form__label" for="login-01">Your login</label>
+                     <input id="login-01" maxlength="10" name="login" autocomplete="off" placeholder="Your login"
+                        type="text" class="input-text">
+                  </div>
+                  <div class="form__line">
+                     <label class="form__email" for="email-01">Your Email</label>
+                     <input required id="email-01" name="email" autocomplete="off" placeholder="Your Email" type="email"
+                        class="input-email">
+                  </div>
+                  <div class="form__line">
+                     <label class="form__tel" for="tel-01">Your phone number</label>
+                     <input required id="tel-01" name="phone" autocomplete="off" placeholder="Your phone number"
+                        type="tel" class="input-tel" maxlength="10">
+                  </div>
+                  <div class="form__line">
+                     <label class="form__password" for="password-01">Your password</label>
+                     <input id="password-01" name="password" autocomplete="off" placeholder="Your password"
+                        type="password" class="input-password">
+                  </div>
+                  <div class="form__line">
+                     <label class="form__number" for="number-01">Number of items</label>
+                     <input id="number-01" name="items-number" autocomplete="off" placeholder="Number of items"
+                        type="number" class="input-number">
+                  </div>
+                  <div class="form__line">
+                     <label class="form__color" for="color-01">Color of items</label>
+                     <input id="color-01" name="items-color" autocomplete="off" placeholder="Color of items"
+                        type="color" class="input-color" value="#aa5e5e">
+                  </div>
+                  <div class="form__line">
+                     <label class="form__search" for="search-01">Search</label>
+                     <input id="search-01" name="search" placeholder="Search" type="search" class="input-search">
+                  </div>
+                  <div class="form__line">
+                     <label class="form__date" for="date-01">Date</label>
+                     <input id="search-01" name="date" placeholder="Date" type="date" class="input-date">
+                  </div>
+                  <div class="form__line">
+                     <label class="form__range" for="range-01">Range</label>
+                     <input id="range-01" name="range" placeholder="Range" type="range" class="input-range">
+                  </div>
+                  <div class="form__line">
+                     <label class="form__checkbox" for="checkbox-01">Gift package</label>
+                     <input id="checkbox-01" checked name="gift-package" type="checkbox" class="input-checkbox">
+                  </div>
+                  <div class="form__line">
+                     <label class="form__radio" for="radio-01">Delivery</label>
+                     <input id="radio-01" checked name="radio" type="radio" class="input-radio">
+                     <label class="form__radio" for="radio-02">Click and collect</label>
+                     <input id="radio-02" name="radio" type="radio" class="input-radio">
+                  </div>
+                  <div class="form__line">
+                     <label class="form__file" for="file-01">Add photo</label>
+                     <input id="file-01" checked name="photo" multiple type="file" class="input-file"
+                        accept="image/png">
+                  </div>
+                  <div class="form__line">
+                     <label class="form__textarea" for="textarea-01">Add comment</label>
+                     <textarea class="textarea-text" name="comment" id="textarea-01" cols="30" rows="10"
+                        placeholder="Add comment"></textarea>
+                  </div>
+                  <div class="select">
+                     <label class="form__select" for="select-01">Select Item</label>
+                     <select name="list" id="select-01">
+                        <option value="1">Item 1</option>
+                        <option selected value="2">Item 2</option>
+                        <option value="3">Item 3</option>
+                     </select>
+                  </div>
+                  <div class="form__line">
+                     <label class="form__button" for="button-01">Submit form</label>
+                     <button class="submit-button" type="submit">Submit form</button>
+                  </div>
+               </form>
+            </div>
+            <div class="crisp-ecommerce">
+               <form class="crisp-ecommerce__form" method="post" enctype="multipart/form-data" action="#">
+                  <div class="crisp-ecommerce__upper-title">
+                     <h2>Shipping Address</h2>
+                  </div>
+                  <div class="crisp-ecommerce__upper-part">
+                     <div class="crisp-ecommerce__upper-block">
+                        <div class="crisp-ecommerce__email flex-block">
+                           <label class="crisp-ecommerce__label email-label" for="email-01">Email Address</label>
+                           <input required id="email-01" name="email" placeholder="roni_cost@example.com" type="email"
+                              class="crisp-ecommerce__input upper-input">
+                        </div>
+                        <div class="crisp-ecommerce__password flex-block">
+                           <label class="crisp-ecommerce__label password-label" for="password-01">Email Address</label>
+                           <input id="password-01" name="password" placeholder="******************" type="password"
+                              class="crisp-ecommerce__input upper-input">
+                        </div>
+                        <div class="crisp-ecommerce__zip flex-block">
+                           <label class="crisp-ecommerce__label zip-label" for="zip-01">Email Address</label>
+                           <input id="zip-01" name="zip" type="text" class="crisp-ecommerce__input upper-input">
+                        </div>
+                     </div>
+                     <div class="crisp-ecommerce__text-block">
+                        You already have an account with us. Sign in or continue as guest.
+                     </div>
+                     <div class="crisp-ecommerce__upper-button-block">
+                        <button class="crisp-ecommerce__button" type="button">LOGIN</button>
+                        <a href="#" class="crisp-ecommerce__forgot-password">Forgot Your Password?</a>
+                     </div>
+                     <div class="crisp-ecommerce__divider">
+                        <img class="divider" src="img/divider.svg" alt="Divider Line">
+                     </div>
+                  </div>
+                  <div class="crisp-ecommerce__middle-part">
+                     <div class="crisp-ecommerce__middle-block">
+                        <div class="crisp-ecommerce__first-name flex-block">
+                           <label class="crisp-ecommerce__label first-name-label" for="name-01">First Name</label>
+                           <input required id="name-01" name="first-name" type="text"
+                              class="crisp-ecommerce__input middle-input">
+                        </div>
+                        <div class="crisp-ecommerce__last-name flex-block">
+                           <label class="crisp-ecommerce__label last-name-label" for="name-02">Last Name</label>
+                           <input required id="name-02" name="last-name" type="text"
+                              class="crisp-ecommerce__input middle-input">
+                        </div>
+                        <div class="crisp-ecommerce__company flex-block">
+                           <label class="crisp-ecommerce__label company-label" for="company-01">Company</label>
+                           <input required id="company-01" name="company" type="text"
+                              class="crisp-ecommerce__input middle-input">
+                        </div>
+                        <div class="crisp-ecommerce__address flex-block">
+                           <label class="crisp-ecommerce__label address-label" for="address-01">Street Address</label>
+                           <input required id="address-01" name="address-1" type="text"
+                              class="crisp-ecommerce__input middle-input">
+                        </div>
+                        <div class="crisp-ecommerce__address flex-block">
+                           <label class="crisp-ecommerce__label middle-label--empty" for="address-02"></label>
+                           <input id="address-02" name="address-2" type="text"
+                              class="crisp-ecommerce__input middle-input">
+                        </div>
+                        <div class="crisp-ecommerce__address flex-block">
+                           <label class="crisp-ecommerce__label middle-label--empty" for="address-03"></label>
+                           <input id="address-03" name="address-3" type="text"
+                              class="crisp-ecommerce__input middle-input">
+                        </div>
+                        <div class="crisp-ecommerce__country flex-block">
+                           <label class="crisp-ecommerce__label country-label" for="country-01">Country</label>
+                           <input required id="country-01" name="country" type="text"
+                              class="crisp-ecommerce__input middle-input">
+                        </div>
+                        <div class="crisp-ecommerce__state flex-block">
+                           <label class="crisp-ecommerce__label state-label" for="select-01">State/Province</label>
+                           <select required class="crisp-ecommerce__select" name="list" id="select-01">
+                              <option selected value="1">Please select a region, state or province</option>
+                              <option value="2">Afghanistan</option>
+                              <option value="3">Albania</option>
+                              <option value="4">Algeria</option>
+                              <option value="5">Andorra</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="crisp-ecommerce__lower-title">
+                        <h2>Shipping Methods</h2>
+                     </div>
+                     <div class="crisp-ecommerce__divider">
+                        <img class="divider" src="img/divider.svg" alt="Divider Line">
+                     </div>
+                  </div>
+                  <div class="crisp-ecommerce__lower-part">
+                     <div class="crisp-ecommerce__lower-block">
+                        <div class="crisp-ecommerce__radio">
+                           <div class="radio-button-01">
+                              <input id="radio-01" checked name="radio" type="radio" class="input-radio">
+                              <label class="radio-button__price" for="radio-01">$5.00</label>
+                              <label class="radio-button__type-01" for="radio-01">Fixed</label>
+                              <label class="radio-button__type-02" for="radio-01">Flat Rate</label>
+                           </div>
+                           <img class="divider-small" src="img/divider.svg" alt="Divider Line">
+                           <div class="radio-button-02">
+                              <input id="radio-02" name="radio" type="radio" class="input-radio">
+                              <label class="radio-button__price" for="radio-02">$10.00</label>
+                              <label class="radio-button__type-01" for="radio-02">Table Rate</label>
+                              <label class="radio-button__type-02" for="radio-02">Best Way</label>
+                           </div>
+                        </div>
+                        <div class="crisp-ecommerce__lower-button-block">
+                           <button class="crisp-ecommerce__button" type="button">NEXT</button>
+                           <a href="#" class="crisp-ecommerce__back">BACK</a>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="tailgrid">
+               <div class="tailgrid__billing-title">
+                  <h3>Billing Details</h3>
+               </div>
+               <div class="tailgrid__detail">
+                  <input required name="first-name" placeholder="First name*" type="text"
+                     class="tailgrid__first-name field">
+                  <input required name="last-name" placeholder="Last name*" type="text"
+                     class="tailgrid__last-name field">
+                  <input required name="address" placeholder="Address*" type="text" class="tailgrid__address field">
+                  <input name="address-02" placeholder="Address line 2" type="text" class="tailgrid__address-02 field">
+                  <select required class="tailgrid__country field" name="list">
+                     <option selected value="1">Country*</option>
+                     <option value="2">Afghanistan</option>
+                     <option value="3">Albania</option>
+                     <option value="4">Algeria</option>
+                     <option value="5">Andorra</option>
+                  </select>
+                  <input required name="city" placeholder="City/Town*" type="text" class="tailgrid__address-02 field">
+                  <input required name="zip" placeholder="Postcode / ZIP*" type="text" class="tailgrid__zip field">
+                  <input required name="phone" placeholder="Phone*" type="tel" class="tailgrid__zip field">
+                  <input required name="zip-02" placeholder="Postcode / ZIP*" type="text" class="tailgrid__zip field">
+                  <input required name="phone-02" placeholder="Phone*" type="tel" class="tailgrid__zip field">
+                  <textarea class="tailgrid__information" name="information"
+                     placeholder="Additional information"></textarea>
+               </div>
+               <div class="tailgrid__options">
+                  <div class="tailgrid__checkbox-01">
+                     <input id="checkbox-01" name="account-option" type="checkbox" class="tailgrid__account checkbox">
+                     <label class="tailgrid__account-label" for="checkbox-01">Create Account</label>
+                  </div>
+                  <div class="tailgrid__checkbox-02">
+                     <input id="checkbox-02" name="address-option" type="checkbox" class="tailgrid__address checkbox">
+                     <label class="tailgrid__address-label" for="checkbox-02">Ship to a different address?</label>
+                  </div>
+                  <div class="tailgrid__coupon-title">
+                     <h3>Apply Coupon to get discount!</h3>
+                  </div>
+                  <input name="coupon" placeholder="Coupon code" type="text" class="tailgrid__coupon-box field">
+                  <button class="tailgrid__button" type="button">Apply Code</button>
+               </div>
+            </div>
+         </div>
+
+
+      </main>
+   </div>
+
+</body>
+
+</html>
