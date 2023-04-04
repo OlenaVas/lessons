@@ -1,0 +1,626 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+body {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.6;
+   color: #9C9C9C;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+
+.page__services {
+margin-top: 100px;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+
+.services__title {
+margin-bottom: 40px;
+
+}
+
+.title {
+   display: inline-block;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.4;
+   color: #333333;
+   margin-right: 26px;
+   vertical-align: middle;
+}
+
+.line {
+   vertical-align: middle;
+   max-width: 100%;
+}
+
+.services__items {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 112px;
+}
+
+.services__item {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-bottom: 40px;
+   align-items: center;
+}
+
+.services__item:last-child {
+   margin-bottom: 0px;
+}
+
+.services__image {
+   flex-grow: 1;
+}
+
+.services__text {
+   margin-left: 5px;
+   max-width: 334px;
+   flex-grow: 1;
+}
+
+.services__subtitle {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.4;
+   color: #333333;
+   margin-bottom: 20px;
+}
+
+.minimalist-room__title {
+   margin-bottom: 40px;
+}
+
+.minimalist-room__main-title {
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 1.4;
+   color: #000000;
+   max-width: 518px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.minimalist-room__subtitle {
+   margin-bottom: 53px;
+}
+
+.minimalist-room__main-subtitle {
+   color: #000000;
+   max-width: 518px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.minimalist-room__big-image {
+   max-width: 1200px;
+   margin: 0 auto;
+   margin-bottom: 32px;
+}
+
+div .minimalist-room__big-image:first-child {
+   margin-bottom: 100px;
+}
+
+.minimalist-room__text-blocks {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 51px;
+}
+
+.minimalist-room__text-block {
+   max-width: 584px;
+}
+
+.minimalist-room__text-block-title {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.4;
+   color: #333333;
+}
+
+h4 {
+   display: inline-block;
+   margin-bottom: 24px;
+}
+
+.minimalist-room__paragraph {
+   display: inline-block;
+   margin-bottom: 30px;
+}
+
+.minimalist-room__paragraph--no-margin {
+   margin-bottom: 0px;
+}
+
+img {
+   max-width: 100%;
+}
+
+span {
+   display: inline-block;
+   margin-top: 30px;
+   margin-right: 80px;
+}
+
+span:last-child {
+   margin-right: 0px;
+}
+
+.minimalist-room__image-blocks {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   flex-grow: 1;
+}
+
+.minimalist-room__image-block--big {
+   margin-bottom: 32px;
+}
+
+div .minimalist-room__image-blocks:last-child {
+   margin-bottom: 68px;
+}
+
+.minimalist-room__image-block {
+   margin-bottom: 32px;
+}
+
+.form {
+   font-size: 16px;
+   max-width: 1230px;
+   margin: 0 auto;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+
+.crisp-ecommerce__form {
+   max-width: 606px;
+   line-height: 1.25;
+   color: #3F3F3F;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   margin-bottom: 100px;
+}
+
+.crisp-ecommerce__upper-title {
+   margin-bottom: 34px;
+}
+
+h2 {
+   font-family: 'Oswald';
+   font-size: 24px;
+   line-height: 2.83;
+   color: #000000;
+}
+
+.crisp-ecommerce__upper-block {
+   display: flex;
+   flex-direction: column;
+   row-gap: 24px;
+}
+
+.flex-block {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.crisp-ecommerce__email {
+   margin-bottom: 3px;
+}
+
+.email-label::after {
+   content: "*";
+   color: #EB5757;
+   margin-left: 2px;
+}
+
+.upper-input {
+   width: 451px;
+   height: 44px;
+   border: 1px solid #C4C4C4;
+   color: #3F3F3F;
+   padding-left: 16px;
+}
+
+.crisp-ecommerce__text-block {
+   min-height: 40px;
+   margin-bottom: 14px;
+   display: flex;
+   align-items: center;
+   color: #828282;
+}
+
+.crisp-ecommerce__upper-button-block {
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   margin-bottom: 36px;
+}
+
+.crisp-ecommerce__button {
+   max-width: 120px;
+   max-height: 50px;
+   background: #000000;
+   font-family: 'Oswald';
+   font-size: 14px;
+   line-height: 1.5;
+   vertical-align: middle;
+   text-align: center;
+   letter-spacing: 0.5px;
+   color: #FFFFFF;
+   margin-right: 25px;
+   padding: 20px 43px;
+   display: flex;
+   align-items: center;
+}
+
+.crisp-ecommerce__forgot-password {
+   font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.43;
+color: #0F6DB1;
+}
+
+img {
+   max-width: 100%;
+}
+
+.crisp-ecommerce__middle-block {
+   display: flex;
+   flex-direction: column;
+   row-gap: 13px;
+   margin-bottom: 46px;
+}
+
+.crisp-ecommerce__first-name {
+margin-bottom: 11px;
+}
+
+.first-name-label::after {
+   content: "*";
+   color: #EB5757;
+   margin-left: 2px;
+}
+
+.middle-input {
+   width: 451px;
+   height: 44px;
+   border: 1px solid #C4C4C4;
+   color: #3F3F3F;
+   padding-left: 16px;
+}
+
+.crisp-ecommerce__last-name {
+   margin-bottom: 11px;
+}
+
+.last-name-label::after {
+   content: "*";
+   color: #EB5757;
+   margin-left: 2px;
+}
+
+.crisp-ecommerce__company {
+   margin-bottom: 11px;
+}
+
+.address-label::after {
+   content: "*";
+   color: #EB5757;
+   margin-left: 2px;
+}
+
+.crisp-ecommerce__country {
+   margin-top: 11px;
+   margin-bottom: 11px;
+}
+
+.country-label::after {
+   content: "*";
+   color: #EB5757;
+   margin-left: 2px;
+}
+
+.crisp-ecommerce__select {
+   width: 451px;
+   height: 44px;
+   border: 1px solid #C4C4C4;
+   color: #3F3F3F;
+   padding-left: 16px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.25;
+}
+
+.state-label::after {
+   content: "*";
+   color: #EB5757;
+   margin-left: 2px;
+}
+
+.crisp-ecommerce__lower-title {
+   margin-bottom: 40px;
+}
+
+.crisp-ecommerce__radio {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-bottom: 24px;
+}
+
+.radio-button-03 {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: start;
+   min-height: 44px;
+   align-items: center;
+}
+
+.radio-button-04 {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: start;
+   min-height: 44px;
+   align-items: center;
+}
+
+.input-radio {
+   margin-right: 13px;
+}
+
+.radio-button__price {
+   color: #828282;
+   min-width: 65px;
+   margin-right: 100px;
+}
+
+.radio-button__type-01 {
+   min-width: 75px;
+   margin-right: 59px;
+}
+
+.divider-small {
+   max-width: 443px;
+}
+
+.crisp-ecommerce__lower-button-block {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+input[type="radio"]:checked + .radio-button__price {
+color: #000000;
+}
+
+.crisp-ecommerce__back {
+   font-family: 'Oswald';
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.5;
+   letter-spacing: 0.5px;
+   color: #828282;
+}
+
+.tailgrid {
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   line-height: 1.5;
+   color: #637381;
+   max-width: 700px;
+}
+
+.tailgrid__billing-title {
+   margin-bottom: 30px;
+}
+
+h3 {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 1.25;
+   color: #212B36;
+}
+
+.tailgrid__detail {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 35px;
+}
+
+.field {
+   width: 336px;
+   height: 54px;
+   background: #FFFFFF;
+   border: 1px solid rgba(231, 231, 231, 1);
+   border-radius: 7px;
+   margin-bottom: 30px;
+   padding-left: 25px;
+}
+
+.tailgrid__country {
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   line-height: 1.5;
+   color: #637381;
+   font-size: 16px;
+}
+
+.tailgrid__information {
+   width: 700px;
+   height: 180px;
+   resize: vertical;
+   border: 1px solid rgba(231, 231, 231, 1);
+   border-radius: 7px;
+   padding: 25px;
+}
+
+.tailgrid__checkbox-01 {
+margin-bottom: 25px;
+}
+
+.checkbox {
+   display: inline-block;
+   vertical-align: middle;
+   margin-right: 14px;
+}
+
+.tailgrid__account-label {
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   line-height: 1.5;
+   color: #637381;
+}
+
+.tailgrid__checkbox-02 {
+   margin-bottom: 55px;
+}
+
+.tailgrid__address-label {
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   line-height: 1.5;
+   color: #637381;
+}
+
+.tailgrid__coupon-title {
+   margin-bottom: 25px;
+}
+
+.tailgrid__coupon-box {
+   margin-right: 25px;
+}
+
+.tailgrid__button {
+padding: 12px 22px;
+background: #212B36;
+border-radius: 5px;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+color: #FFFFFF;
+}
+
+input[type="checkbox"] {
+   appearance: none;
+   width: 22px;
+   height: 22px;
+   border: 0.7px solid rgba(231, 231, 231, 1);
+   border-radius: 4px;
+   background-color: #fff;
+}
+
+input[type="checkbox"]:checked {
+   background-image: url('../img/vector.svg');
+   background-size: 70% 70%;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+@media screen and (max-width: 1197px) {
+.minimalist-room__text-blocks {
+   justify-content: center;
+}
+.minimalist-room__image-blocks {
+   justify-content: center;
+}
+.minimalist-room__text-block {
+   max-width: 900px;
+   text-align: center;
+}
+span:last-child {
+   margin-bottom: 50px;
+}
+}
+
+@media screen and (max-width: 1114px) {
+   .services__title{
+      text-align: center;
+   }
+   .services__item {
+      justify-content: center;
+   }
+   .services__image {
+      text-align: center;
+   }
+   .services__text {
+      text-align: center;
+      max-width: 700px;
+   }
+   }
+
+@media screen and (max-width: 991px) {
+
+   .minimalist-room__main-title {
+      font-size: 48px;
+   }
+   .minimalist-room__main-subtitle {
+      font-size: 20px;
+}
+   span {
+      margin-right: 20px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+
+   .minimalist-room__main-title {
+      font-size: 40px;
+   }
+   .minimalist-room__main-subtitle {
+         font-size: 18px;
+   }
+}
+
+@media screen and (max-width: 420px) {
+
+   .radio-button-03 {
+      margin-bottom: 15px;
+   }
+}
+
+@media screen and (max-width: 345px) {
+
+   .crisp-ecommerce__select {
+      font-size: 14px;
+   }
+}
